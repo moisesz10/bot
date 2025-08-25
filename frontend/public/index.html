@@ -2,22 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Ícone padrão -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Viewport responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <!-- Cor do tema adaptável ao sistema -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+
+    <!-- iOS Safari status bar -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- SEO -->
     <meta
       name="description"
       content="AI Summarizer Bot: Resuma textos e artigos de forma rápida e eficiente com nossa ferramenta de inteligência artificial."
     />
-    <meta name="keywords" content="AI, summarizer, bot, text summarization, artificial intelligence" />
+    <meta
+      name="keywords"
+      content="AI, summarizer, bot, text summarization, artificial intelligence, resumo de textos, IA"
+    />
+    <meta name="author" content="Moises Nunes Pereira" />
+
+    <!-- Open Graph (para redes sociais) -->
+    <meta property="og:title" content="AI Summarizer Bot" />
+    <meta
+      property="og:description"
+      content="Resuma textos e artigos de forma rápida e eficiente com nossa ferramenta de inteligência artificial."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="https://moisesz10.github.io/bot" />
+
+    <!-- PWA -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Preload de fontes -->
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <title>AI Summarizer Bot</title>
-    <!-- Preload de fontes (exemplo) -->
-    <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Você precisa habilitar o JavaScript para rodar este app.</noscript>
     <div id="root"></div>
   </body>
+</html>
